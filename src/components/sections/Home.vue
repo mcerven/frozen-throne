@@ -72,7 +72,7 @@ export default {
     left: 0;
     height: 100%;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.1) 35%, var(--bg-primary));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 35%, var(--bg-primary));
   }
 
   .Home__content {
