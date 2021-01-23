@@ -1,0 +1,59 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-primary: rgb(8, 28, 41);
+  --bg-accent: rgb(0, 60, 100);
+  --text-primary: rgb(255, 255, 255);
+  --text-secondary: rgb(146, 210, 255);
+}
+
+html {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: Lato, sans-serif;
+  line-height: 1.15;
+}
+
+header h1, header h2, header h3, header h4, header h5, header h6 {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+section {
+  height: 100vh;
+  padding-bottom: 3em;
+}
+
+section header {
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 3em;
+  flex-wrap: wrap;
+  text-align: justify;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.column {
+  flex-basis: 55ch;
+  line-height: 1.5;
+}
+
+article h3 {
+  margin: 1em 0;
+}

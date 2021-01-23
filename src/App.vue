@@ -1,26 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <main>
+    <Home title="All must serve the one, true King" subtitle="Coming soon" />
+    <Introduction />
+    <Deathknight />
+  </main>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import './global-styles.css';
+import Home from './components/sections/Home.vue';
+import Introduction from './components/sections/Introduction.vue';
+import Deathknight from './components/sections/Deathknight.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Home,
+    Introduction,
+    Deathknight,
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+,
+    Deathknight

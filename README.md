@@ -1,4 +1,4 @@
-# wotlk
+# Frozen Throne
 
 ## Project setup
 ```
