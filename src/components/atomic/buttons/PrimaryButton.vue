@@ -17,7 +17,7 @@ export default {
 <style scoped>
   .Button {
     font-size: 1rem;
-    padding: 0.8em 1.5em;
+    padding: 0.6em 1.2em;
     background: var(--bg-accent);
     border: none;
     border-radius: 2rem;

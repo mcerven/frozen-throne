@@ -7,19 +7,21 @@
       <div class="Home__gradient"></div>
     </div>
     <div class="Home__content">
-      <img src="../../assets/images/ft-logo.png" alt="Frozen Throne" />
+      <div class="Home__logo">
+        <img src="../../assets/images/ft-logo.png" alt="Frozen Throne" />
+      </div>
       <div>
         <h2 class="Home__title">{{title}}</h2>
       </div>
-      <div class="line">
-        <p class="Home__subtitle">{{subtitle}}</p>
+      <div class="Home__subtitle line">
+        <p>{{subtitle}}</p>
       </div>
       <div class="line">
         <DiscordButton></DiscordButton>
       </div>
-      <div class="line">
-        <ScrollIcon width="50" />
-      </div>
+    </div>
+    <div class="Home__scroll-icon">
+      <ScrollIcon width="50" />
     </div>
   </section>
 </template>
@@ -72,22 +74,27 @@ export default {
     left: 0;
     height: 100%;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 35%, var(--bg-primary));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 35%, var(--bg-primary));
   }
 
   .Home__content {
     position: absolute;
-    top: 20%;
+    top: 0;
+    left: 0;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 0;
     text-align: center;
     font-size: 1.1rem;
+  }
+
+  .Home__logo {
+    margin-top: 100px;
   }
 
   .Home__title {
     font-size: 2rem;
     letter-spacing: 2px;
+    text-shadow: 1px 1px 17px rgba(0, 0, 0, 0.35);
   }
   
   .Home__subtitle {
@@ -97,7 +104,15 @@ export default {
     font-weight: 600;
   }
 
+  .Home__scroll-icon {
+    position: absolute;
+    bottom: 4em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
   .line {
-    margin: 4rem;
+    margin: 2rem;
   }
 </style>

@@ -4,7 +4,7 @@
       <h2>Rise of the Lich King</h2>
     </header>
     <article>
-      <div class="columns">
+      <div class="row">
         <div class="column">
           <h3>Back to the Roots</h3>
           <p>
@@ -42,11 +42,5 @@ export default {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  }
-
-  section header {
-    font-size: 2rem;
-    text-align: center;
-    padding: 3rem 0 2rem 0;
   }
 </style>
