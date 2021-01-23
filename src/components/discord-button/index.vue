@@ -1,15 +1,19 @@
 <template>
-  <Button @click="handleClick" style="color: var(--text-primary);">
-    <img width="24" src="../../assets/images/discord.svg" alt="Frozen Throne" />
+  <PrimaryButton @click="handleClick" style="color: var(--text-primary);">
+    <DiscordIcon width="35" />
     <span>Join Discord</span>
-  </Button>
+  </PrimaryButton>
 </template>
 
 <script>
-import Button from '../button'
+import PrimaryButton from '../atomic/buttons/PrimaryButton.vue';
+import DiscordIcon from '../atomic/icons/DiscordIcon.vue';
 
 export default {
-  components: { Button },
+  components: { 
+    PrimaryButton,
+    DiscordIcon,
+  },
   name: 'DiscordButton',
   methods: {
     handleClick() {

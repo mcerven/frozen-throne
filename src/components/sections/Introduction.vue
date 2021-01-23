@@ -1,5 +1,5 @@
 <template>
-  <section id="introduction">
+  <section id="introduction" class="bg-image">
     <header>
       <h2>Rise of the Lich King</h2>
     </header>
@@ -37,10 +37,16 @@ export default {
 </script>
 
 <style scoped>
-  section {
+  .bg-image {
     background: linear-gradient(180deg, var(--bg-primary), rgba(127, 64, 185, 0.3)), url('../../assets/images/grizzly-hills.jpg');
     background-repeat: no-repeat;
-    background-size: auto;
+    background-position: center;
     background-size: cover;
+  }
+
+  section header {
+    font-size: 2rem;
+    text-align: center;
+    padding: 3rem 0 2rem 0;
   }
 </style>

@@ -31,6 +31,6 @@ export default {
   .Button__content {
     display: flex;
     align-items: center;
-    gap: 0.25em;
+    gap: 0.4em;
   }
 </style>

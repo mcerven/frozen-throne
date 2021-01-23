@@ -18,34 +18,42 @@ html {
   line-height: 1.15;
 }
 
-header h1, header h2, header h3, header h4, header h5, header h6 {
+html, body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+header h1,
+header h2,
+header h3,
+header h4,
+header h5,
+header h6 {
   font-family: "Josefin Sans", sans-serif;
 }
 
-main {
+.scroll-container {
   width: 100%;
-  min-height: 100vh;
-}
-
-section {
+  overflow: auto;
   height: 100vh;
-  padding-bottom: 3em;
+  scroll-snap-type: y mandatory;
 }
 
-section header {
-  font-size: 2rem;
-  text-align: center;
-  padding: 2rem;
+.scroll-container > section {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 7em;
+  scroll-snap-align: start;
 }
 
 .columns {
   display: flex;
   justify-content: center;
   width: 100%;
+  max-width: 1200px;
   gap: 3em;
   flex-wrap: wrap;
   text-align: justify;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -54,6 +62,11 @@ section header {
   line-height: 1.5;
 }
 
-article h3 {
+article h1, 
+article h2, 
+article h3, 
+article h4, 
+article h5,
+article h6 {
   margin: 1em 0;
 }

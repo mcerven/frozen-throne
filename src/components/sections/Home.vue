@@ -8,11 +8,18 @@
     </div>
     <div class="Home__content">
       <img src="../../assets/images/ft-logo.png" alt="Frozen Throne" />
-      <header>
+      <div>
         <h2 class="Home__title">{{title}}</h2>
-      </header>
-      <p class="Home__subtitle">{{subtitle}}</p>
-      <DiscordButton></DiscordButton>
+      </div>
+      <div class="line">
+        <p class="Home__subtitle">{{subtitle}}</p>
+      </div>
+      <div class="line">
+        <DiscordButton></DiscordButton>
+      </div>
+      <div class="line">
+        <ScrollIcon width="50" />
+      </div>
     </div>
   </section>
 </template>
@@ -20,9 +27,13 @@
 <script>
 import { onMounted, ref } from 'vue';
 import DiscordButton from '../discord-button';
+import ScrollIcon from '../atomic/icons/ScrollIcon.vue';
 
 export default {
-  components: { DiscordButton },
+  components: {
+    DiscordButton,
+    ScrollIcon,
+  },
   props: {
     title: String,
     subtitle: String,
@@ -66,7 +77,7 @@ export default {
 
   .Home__content {
     position: absolute;
-    top: 30%;
+    top: 20%;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -75,13 +86,18 @@ export default {
   }
 
   .Home__title {
-    margin: 1.2rem;
     font-size: 2rem;
+    letter-spacing: 2px;
   }
+  
   .Home__subtitle {
     color: var(--text-secondary);
     text-transform: uppercase;
-    margin: 1.2rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+
+  .line {
+    margin: 4rem;
   }
 </style>

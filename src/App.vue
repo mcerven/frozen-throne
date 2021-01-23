@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="scroll-container">
     <Home title="All must serve the one, true King" subtitle="Coming soon" />
     <Introduction />
     <Deathknight />
@@ -21,5 +21,3 @@ export default {
   }
 }
 </script>
-,
-    Deathknight
