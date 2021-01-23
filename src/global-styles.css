@@ -60,8 +60,9 @@ section > header {
   max-width: 1200px;
   gap: 3rem;
   flex-wrap: wrap;
-  text-align: justify;
   margin: 0 auto;
+  font-size: 1.1rem;
+  text-align: justify;
 }
 
 .column {

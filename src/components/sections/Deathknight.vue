@@ -66,8 +66,8 @@ export default {
 
 <style>
   .Deathknight__img {
-    width: 600px;
-    box-shadow: 0 0 30px 0 rgba(0, 0, 0, .8);
+    width: 100%;
+    box-shadow: 0 0 32px 0 rgba(0, 0, 0, .8);
     margin-bottom: 1em;
   }
 </style>

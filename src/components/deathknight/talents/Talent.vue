@@ -24,10 +24,15 @@ export default {
 <style>
   .Talent {
     padding: 0.8em 1.6em;
-    border: 1px solid var(--bg-accent);
+    border: 1px solid transparent;
     display: flex;
     align-items: center;
     gap: 1em;
+    transition: border-color 0.3s ease;
+  }
+
+  .Talent:hover {
+    border-color: var(--bg-accent);
   }
 
   .Talent__img {
@@ -38,7 +43,7 @@ export default {
   }
 
   .Talent__name, .Talent__role {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
   }
 
   .Talent__role {

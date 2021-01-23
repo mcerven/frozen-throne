@@ -13,10 +13,10 @@
       <div>
         <h2 class="Home__title">{{title}}</h2>
       </div>
-      <div class="Home__subtitle line">
+      <div class="Home__subtitle">
         <p>{{subtitle}}</p>
       </div>
-      <div class="line">
+      <div class="Home__button">
         <DiscordButton></DiscordButton>
       </div>
     </div>
@@ -92,16 +92,21 @@ export default {
   }
 
   .Home__title {
-    font-size: 2rem;
+    font-size: 2.1rem;
     letter-spacing: 2px;
-    text-shadow: 1px 1px 17px rgba(0, 0, 0, 0.35);
+    text-shadow: 0 0 26px rgba(0, 0, 0, 1);
   }
   
   .Home__subtitle {
-    color: var(--text-secondary);
+    margin: 2rem;
+    color: var(--bg-secondary);
     text-transform: uppercase;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     font-weight: 600;
+  }
+
+  .Home__button {
+    margin: 6rem;
   }
 
   .Home__scroll-icon {
@@ -110,9 +115,5 @@ export default {
     width: 100%;
     display: flex;
     justify-content: center;
-  }
-
-  .line {
-    margin: 2rem;
   }
 </style>
