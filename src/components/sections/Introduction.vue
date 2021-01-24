@@ -1,6 +1,7 @@
 <template>
   <section id="introduction" class="bg-image">
     <header>
+      <span class="section-name">Introduction</span>
       <h2>Rise of the Lich King</h2>
     </header>
     <article>

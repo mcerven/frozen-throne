@@ -1,7 +1,8 @@
 <template>
   <section id="deathknight">
     <header>
-      <h2>New class - Death knight</h2>
+      <span class="section-name">New class - Death knight</span>
+      <h2>Melee fighter wielding powerful dark magic</h2>
     </header>
     <article>
       <div class="row">

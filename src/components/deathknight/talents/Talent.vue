@@ -7,15 +7,21 @@
 </template>
 
 <script>
+import { computed } from 'vue';
+
 export default {
   props: {
     name: String,
     role: String,
     image: String,
   },
-  computed: {
-    imagePath() {
-      return require(`../../../assets/images/deathknight/talents/${this.image}`);
+  setup(props) {
+    const imagePath = computed(() => {
+      return require(`../../../assets/images/deathknight/talents/${props.image}`)
+    });
+
+    return {
+      imagePath,
     }
   }
 }
