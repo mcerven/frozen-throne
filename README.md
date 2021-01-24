@@ -1,4 +1,7 @@
-# Frozen Throne
+# The Return of the Lich King
+
+## Technologies used
+- Vue.js
 
 ## Project setup
 ```

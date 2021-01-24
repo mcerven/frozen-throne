@@ -8,7 +8,7 @@ export default [
     href: '#deathknight',
   },
   {
-    label: 'Raid Timeline',
+    label: 'Raid timeline',
     href: '#timeline',
   },
   {
@@ -16,7 +16,7 @@ export default [
     href: '#features',
   },
   {
-    label: 'The Return of the King',
+    label: 'The Return of the Lich King',
     href: '#king',
   }
 ];
