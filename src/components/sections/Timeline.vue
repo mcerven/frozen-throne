@@ -5,6 +5,8 @@
       <h2>Conquer the Frozen North</h2>
     </header>
     <div>
+      <div class="timeline__bg">
+      </div>
       <div class="swiper-container">
         <ul class="swiper-wrapper timeline">
           <li class="swiper-slide" v-for="item in events" :key="item.title">
@@ -49,6 +51,20 @@ export default {
 </script>
 
 <style scoped>
+  .timeline__bg {
+    background:
+      linear-gradient(to bottom, var(--bg-primary), rgba(0, 0, 0, 0.68) 30%, rgba(0, 0, 0, 0.85)),
+      url('../../assets/images/background/howling-fjord.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
   .swiper-container {
     width: 100%;
     height: 100%;

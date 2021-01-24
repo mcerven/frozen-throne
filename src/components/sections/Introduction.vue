@@ -39,7 +39,9 @@ export default {
 
 <style scoped>
   .bg-image {
-    background: linear-gradient(to bottom, var(--bg-primary), rgba(127, 64, 185, 0.3)), url('../../assets/images/grizzly-hills.jpg');
+    background:
+      linear-gradient(to bottom, var(--bg-primary), rgb(32 30 61 / 30%)),
+      url('../../assets/images/background/grizzly-hills.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
