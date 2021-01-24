@@ -4,6 +4,7 @@
     <Introduction />
     <Deathknight />
     <Timeline :events="timelineEvents" />
+    <Features />
   </main>
 </template>
 
@@ -13,6 +14,7 @@ import Home from './components/sections/Home.vue';
 import Introduction from './components/sections/Introduction.vue';
 import Deathknight from './components/sections/Deathknight.vue';
 import Timeline from './components/sections/Timeline.vue';
+import Features from './components/sections/Features.vue';
 
 export default {
   name: 'App',
@@ -21,6 +23,7 @@ export default {
     Introduction,
     Deathknight,
     Timeline,
+    Features,
   },
   setup() {
     const timelineEvents = [

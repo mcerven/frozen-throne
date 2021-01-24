@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 139 139" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill: #92d2ff">
+    <g transform="matrix(1,0,0,1,-157.274,-418.321)">
+        <g id="stamina" transform="matrix(1,0,0,1,-374.667,172)">
+            <g transform="matrix(1,0,0,1,-98.6667,-382.667)">
+                <path d="M680.781,651.97L700.008,632.743L719.235,651.97" style="fill:none;stroke:#92d2ff;stroke-width:4.17px;"/>
+                <g transform="matrix(6.12323e-17,1,-1,6.12323e-17,1398.4,-1.61976)">
+                    <path d="M680.781,651.97L700.008,632.743L719.235,651.97" style="fill:none;stroke:#92d2ff;stroke-width:4.17px;"/>
+                </g>
+                <g transform="matrix(-1,1.22465e-16,-1.22465e-16,-1,1400.02,1396.78)">
+                    <path d="M680.781,651.97L700.008,632.743L719.235,651.97" style="fill:none;stroke:#92d2ff;stroke-width:4.17px;"/>
+                </g>
+                <g transform="matrix(6.12323e-17,-1,1,6.12323e-17,1.61976,1398.4)">
+                    <path d="M680.781,651.97L700.008,632.743L719.235,651.97" style="fill:none;stroke:#92d2ff;stroke-width:4.17px;"/>
+                </g>
+                <g transform="matrix(0.277399,0,0,0.277399,576.703,514.873)">
+                    <rect x="277.174" y="494.224" width="334.667" height="334.667" style="fill:none;stroke:#92d2ff;stroke-width:15.02px;"/>
+                </g>
+            </g>
+            <g id="plus" transform="matrix(0.0961468,0,0,0.0961468,601.342,315.722)">
+                <g transform="matrix(1,0,0,1,-224,-256)">
+                    <path d="M416,208L272,208L272,64C272,46.33 257.67,32 240,32L208,32C190.33,32 176,46.33 176,64L176,208L32,208C14.33,208 0,222.33 0,240L0,272C0,289.67 14.33,304 32,304L176,304L176,448C176,465.67 190.33,480 208,480L240,480C257.67,480 272,465.67 272,448L272,304L416,304C433.67,304 448,289.67 448,272L448,240C448,222.33 433.67,208 416,208Z" style="fill-rule:nonzero;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

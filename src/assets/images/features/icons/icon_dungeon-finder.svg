@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 139 139" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill: #92d2ff">
+    <g transform="matrix(1,0,0,1,-763.941,-55.6545)">
+        <g id="armor">
+            <g id="border" transform="matrix(1,0,0,1,133.333,-573.333)">
+                <path d="M680.781,651.97L700.008,632.743L719.235,651.97" style="fill:none;stroke:#92d2ff;stroke-width:4.17px;"/>
+                <g transform="matrix(6.12323e-17,1,-1,6.12323e-17,1398.4,-1.61976)">
+                    <path d="M680.781,651.97L700.008,632.743L719.235,651.97" style="fill:none;stroke:#92d2ff;stroke-width:4.17px;"/>
+                </g>
+                <g transform="matrix(-1,1.22465e-16,-1.22465e-16,-1,1400.02,1396.78)">
+                    <path d="M680.781,651.97L700.008,632.743L719.235,651.97" style="fill:none;stroke:#92d2ff;stroke-width:4.17px;"/>
+                </g>
+                <g transform="matrix(6.12323e-17,-1,1,6.12323e-17,1.61976,1398.4)">
+                    <path d="M680.781,651.97L700.008,632.743L719.235,651.97" style="fill:none;stroke:#92d2ff;stroke-width:4.17px;"/>
+                </g>
+                <g transform="matrix(0.277399,0,0,0.277399,576.703,514.873)">
+                    <rect x="277.174" y="494.224" width="334.667" height="334.667" style="fill:none;stroke:#92d2ff;stroke-width:15.02px;"/>
+                </g>
+            </g>
+            <g id="helmet-battle" transform="matrix(0.113719,0,0,0.113719,833.342,125.055)">
+                <g transform="matrix(1,0,0,1,-288,-256)">
+                    <clipPath id="_clip1">
+                        <rect x="0" y="0" width="576" height="512"/>
+                    </clipPath>
+                    <g clip-path="url(#_clip1)">
+                        <path d="M480,210.82C480,90.35 288,0 288,0C288,0 96,90.35 96,210.82C96,293.58 73.14,356.72 64.87,391.53C61.44,405.96 68.46,420.9 81.19,426.77L242.73,505.53C251.467,509.788 261.06,512.001 270.78,512L305.24,512C314.96,512 324.55,509.79 333.29,505.53L494.83,426.77C507.56,420.9 514.58,405.96 511.15,391.53C502.86,356.72 480,293.58 480,210.82ZM312,462.5L312,288L400,256L400,224L176,224L176,256L264,288L264,462.5L114.88,389.81C115.65,386.99 116.46,384.04 117.31,380.95C127.94,342.36 144,284.05 144,210.82C144,147.38 235.88,83.11 288,54.06C340.12,83.11 432,147.38 432,210.82C432,284.05 448.06,342.36 458.69,380.94C459.54,384.02 460.35,386.98 461.12,389.79L312,462.5Z" style="fill-rule:nonzero;"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
