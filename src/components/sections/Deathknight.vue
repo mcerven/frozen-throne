@@ -18,8 +18,11 @@
         </div>
         <div class="column">
           <figure>
-            <img class="Deathknight__img" alt="Death knight"
-              src="../../assets/images/deathknight/dk.jpg" />
+            <img
+              class="Deathknight__img"
+              alt="Death knight"
+              src="../../assets/images/deathknight/dk.jpg"
+              @click="setIsOpen($event, true)" />
           </figure>
         </div>
       </div>
@@ -46,16 +49,27 @@
         </div>
         <div class="column">
           <figure>
-            <img class="Deathknight__img" alt="Death knight mount"
-              src="../../assets/images/deathknight/dk-mount.png" />
+            <img
+              class="Deathknight__img"
+              src="../../assets/images/deathknight/dk-mount.png"
+              alt="Death knight mount"
+              @click="setIsOpen($event, true)" />
           </figure>
         </div>
       </div>
     </article>
+    <div
+      v-show="isOpen"
+      class="fullscreen"
+      @click="setIsOpen(false)"
+      @click.stop="">
+      <div id="fullscreenWrapper" ref="fullscreenWrapper"></div>
+    </div>
   </section>
 </template>
 
 <script>
+import { ref, reactive, toRefs, onMounted } from 'vue';
 import Talents from '../deathknight/talents';
 
 export default {
@@ -65,6 +79,36 @@ export default {
   props: {
     sectionName: String,
     title: String,
+  },
+  setup() {
+    const fullscreenWrapper = ref(null);
+    const state = reactive({
+      isOpen: false,
+    });
+
+    function setIsOpen($event, val) {
+      state.isOpen = val;
+
+      if (state.isOpen) {
+        fullscreenWrapper.value.textContent = '';
+
+        const imageCopy = $event.target.cloneNode(true);
+        imageCopy.addEventListener('click', e => {
+          e.stopPropagation();
+        })
+        fullscreenWrapper.value.append(imageCopy);
+      }
+    }
+
+    onMounted(() => {
+      console.log(fullscreenWrapper.value)
+    })
+    
+    return {
+      fullscreenWrapper,
+      setIsOpen,
+      ...toRefs(state),
+    }
   }
 }
 </script>
@@ -74,5 +118,25 @@ export default {
     width: 100%;
     box-shadow: 0 0 32px 0 rgba(0, 0, 0, .8);
     margin-bottom: 1em;
+    object-fit: contain;
+  }
+
+  .fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    transition: all 300ms ease;
+  }
+  .fullscreen .Deathknight__img {
+    max-width: 90vmin;
   }
 </style>

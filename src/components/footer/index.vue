@@ -2,14 +2,14 @@
   <footer class="Footer">
     <div class="Footer__content">
       <div>
-        <div></div>
+        <SectionLinks :links="links" />
         <ul class="Footer__social-media">
           <li><DiscordLink /></li>
           <li><GithubLink /></li>
         </ul>
       </div>
       <div class="Footer__bottom">
-        <SectionLinks :links="links" />
+        <div></div>
         <div class="Footer__copyright">
           <span>{{copyright}}</span>
         </div>
@@ -48,8 +48,9 @@ export default {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 200px;
+    min-height: 200px;
     background: black;
+    padding: 0 10px;
   }
 
   .Footer__content {
@@ -64,6 +65,7 @@ export default {
   .Footer__content > div {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
   }
 
   .Footer__social-media {

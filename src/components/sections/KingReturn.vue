@@ -41,6 +41,7 @@ export default {
   .KingReturn__cinematic {
     display: flex;
     justify-content: center;
+    padding: 0 10px;
   }
 
   .KingReturn__cinematic iframe {

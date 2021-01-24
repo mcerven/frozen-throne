@@ -87,8 +87,9 @@ export default {
     font-size: 1.1rem;
   }
 
-  .Home__logo {
+  .Home__logo img {
     margin-top: 100px;
+    max-width: 100%;
   }
 
   .Home__title {
