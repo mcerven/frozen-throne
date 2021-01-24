@@ -90,3 +90,19 @@ article h5,
 article h6 {
   margin-bottom: 1.5em;
 }
+
+li {
+  list-style-type: none;
+}
+
+.Link {
+  color: var(--text-primary);
+  text-decoration: none;
+  text-transform: uppercase;
+  opacity: 0.8;
+  transition: opacity 200ms ease-in-out;
+}
+
+.Link:hover {
+  opacity: 1;
+}

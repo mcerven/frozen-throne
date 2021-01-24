@@ -5,7 +5,7 @@
     <Deathknight sectionName="New class - Death knight" title="Melee fighter wielding powerful dark magic" />
     <Timeline sectionName="Timeline" title="Conquer the Frozen North" :events="events" />
     <Features :features="features" />
-    <KingReturn title="The Return of the King" videoUrl="https://www.youtube.com/embed/0W-wK2MQbb4" />
+    <KingReturn title="The Return of the King" videoUrl="https://www.youtube.com/embed/0W-wK2MQbb4" copyright="©2021 Mario Cerven" />
   </main>
 </template>
 

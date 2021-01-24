@@ -1,0 +1,81 @@
+<template>
+  <footer class="Footer">
+    <div class="Footer__content">
+      <div>
+        <div></div>
+        <ul class="Footer__social-media">
+          <li><DiscordLink /></li>
+          <li><GithubLink /></li>
+        </ul>
+      </div>
+      <div class="Footer__bottom">
+        <SectionLinks :links="links" />
+        <div class="Footer__copyright">
+          <span>{{copyright}}</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</template>
+
+<script>
+import DiscordLink from '../social-media/DiscordLink.vue';
+import GithubLink from '../social-media/GithubLink.vue';
+import SectionLinks from '../section-links';
+import LinkData from '../../data/link-data';
+
+export default {
+  components: {
+    DiscordLink,
+    GithubLink,
+    SectionLinks,
+  },
+  props: {
+    copyright: String,
+  },
+  setup() {
+    const links = LinkData;
+
+    return {
+      links,
+    }
+  }
+}
+</script>
+
+<style>
+  .Footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background: black;
+  }
+
+  .Footer__content {
+    margin: 40px auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 40px;
+  }
+
+  .Footer__content > div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .Footer__social-media {
+    display: flex;
+    gap: 15px;
+  }
+
+  .Footer__bottom {
+    gap: 30px;
+  }
+
+  .Footer__copyright {
+    opacity: 0.8;
+  }
+</style>

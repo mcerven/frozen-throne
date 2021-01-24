@@ -3,10 +3,9 @@
     <header>
       <h2>{{title}}</h2>
     </header>
-    <div class="container">
-      <div class="KingReturn">
+    <div class="KingReturn">
+      <div class="KingReturn__cinematic">
         <iframe
-          class="KingReturn__cinematic"
           :title="title"
           :src="videoUrl"
           frameBorder="0"
@@ -14,47 +13,47 @@
         />
       </div>
     </div>
-    <footer class="Footer">
-      <div class="Footer__content"></div>
-    </footer>
+    <Footer :copyright="copyright" />
   </section>
 </template>
 
 <script>
+import Footer from '../footer';
+
 export default {
+  components: {
+    Footer,
+  },
   props: {
     title: String,
     videoUrl: String,
+    copyright: String,
   },
 }
 </script>
 
 <style>
-  .container {
+  .KingReturn {
     max-width: 1200px;
     margin: 0 auto;
   }
 
-  .KingReturn {
+  .KingReturn__cinematic {
     display: flex;
     justify-content: center;
   }
 
-  .KingReturn__cinematic {
+  .KingReturn__cinematic iframe {
     width: 800px;
     height: 450px;
   }
-  
-  .Footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 200px;
-    background: black;
-  }
 
-  .Footer__content {
-    margin: 0 auto;
-    max-width: 1200px;
+  @media
+    screen and (max-width: 850px),
+    screen and (max-height: 800px) {
+    .KingReturn__cinematic iframe {
+      width: 600px;
+      height: 340px;
+    }
   }
 </style>

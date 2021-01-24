@@ -28,7 +28,7 @@
 
 <script>
 import { onMounted, ref } from 'vue';
-import DiscordButton from '../discord-button';
+import DiscordButton from '../social-media/DiscordButton.vue';
 import ScrollIcon from '../atomic/icons/ScrollIcon.vue';
 
 export default {
