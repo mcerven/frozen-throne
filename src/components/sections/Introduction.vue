@@ -1,8 +1,8 @@
 <template>
   <section id="introduction" class="bg-image">
     <header>
-      <span class="section-name">Introduction</span>
-      <h2>Rise of the Lich King</h2>
+      <span class="section-name">{{sectionName}}</span>
+      <h2>{{title}}</h2>
     </header>
     <article>
       <div class="row">
@@ -33,7 +33,10 @@
 
 <script>
 export default {
-
+  props: {
+    sectionName: String,
+    title: String,
+  }
 }
 </script>
 

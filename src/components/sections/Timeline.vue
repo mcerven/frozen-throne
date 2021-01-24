@@ -1,8 +1,8 @@
 <template>
   <section id="timeline">
     <header>
-      <span class="section-name">Raids Timeline</span>
-      <h2>Conquer the Frozen North</h2>
+      <span class="section-name">{{sectionName}}</span>
+      <h2>{{title}}</h2>
     </header>
     <div>
       <div class="timeline__bg">
@@ -30,6 +30,8 @@ import Swiper from 'swiper';
 export default {
   name: 'Timeline',
   props: {
+    sectionName: String,
+    title: String,
     events: Array,
   },
   setup() {

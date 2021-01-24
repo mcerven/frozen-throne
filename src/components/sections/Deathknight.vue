@@ -1,8 +1,8 @@
 <template>
   <section id="deathknight">
     <header>
-      <span class="section-name">New class - Death knight</span>
-      <h2>Melee fighter wielding powerful dark magic</h2>
+      <span class="section-name">{{sectionName}}</span>
+      <h2>{{title}}</h2>
     </header>
     <article>
       <div class="row">
@@ -61,6 +61,10 @@ import Talents from '../deathknight/talents';
 export default {
   components: {
     Talents,
+  },
+  props: {
+    sectionName: String,
+    title: String,
   }
 }
 </script>
