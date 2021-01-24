@@ -3,6 +3,9 @@
 ## Technologies used
 - Vue.js
 
+## Demo
+https://frozen-throne.netlify.app
+
 ## Project setup
 ```
 npm install
