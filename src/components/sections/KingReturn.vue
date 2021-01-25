@@ -34,7 +34,7 @@ export default {
 
 <style>
   .KingReturn {
-    max-width: 1200px;
+    max-width: var(--page-max-width);
     margin: 0 auto;
   }
 

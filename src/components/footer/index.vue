@@ -55,7 +55,7 @@ export default {
 
   .Footer__content {
     margin: 40px auto;
-    max-width: 1200px;
+    max-width: var(--page-max-width);
     display: flex;
     flex-direction: column;
     align-items: space-between;

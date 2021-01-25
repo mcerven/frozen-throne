@@ -5,6 +5,8 @@
 }
 
 :root {
+  --page-max-width: 1200px;
+
   --bg-primary: rgb(8, 28, 41);
   --bg-accent: rgb(0, 60, 100);
   --text-primary: rgb(255, 255, 255);
@@ -68,7 +70,7 @@ section > header .section-name {
   display: flex;
   justify-content: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: var(--page-max-width);
   gap: 3rem;
   flex-wrap: wrap;
   margin: 0 auto;
