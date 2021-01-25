@@ -62,10 +62,14 @@ export default {
 <style scoped>
   .Home__bg {
     position: relative;
+    top: 0;
+    height: 500px;
   }
 
   .Home__video {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .Home__gradient {
