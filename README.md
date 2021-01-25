@@ -6,6 +6,9 @@
 ## Demo
 https://frozen-throne.netlify.app
 
+## Inspired by
+https://frozen-throne.com
+
 ## Project setup
 ```
 npm install
