@@ -1,4 +1,4 @@
-# The Return of the Lich King
+# Frozen Throne
 
 ## Technologies used
 - Vue.js
