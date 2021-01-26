@@ -5,8 +5,10 @@
 }
 
 :root {
+  /* page variables */
   --page-max-width: 1200px;
 
+  /* colors */
   --bg-primary: rgb(8, 28, 41);
   --bg-accent: rgb(0, 60, 100);
   --text-primary: rgb(255, 255, 255);
@@ -80,9 +82,9 @@ section > header .section-name {
 }
 
 .column {
-  flex-basis: 55ch;
   line-height: 1.5;
   margin-bottom: 3em;
+  flex: 1 1 400px;
 }
 
 article h1, 

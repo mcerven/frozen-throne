@@ -57,4 +57,12 @@ export default {
       height: 340px;
     }
   }
+
+  @media
+    screen and (max-width: 450px) {
+    .KingReturn__cinematic iframe {
+      width: 300px;
+      height: 170px;
+    }
+  }
 </style>

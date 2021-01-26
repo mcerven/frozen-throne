@@ -10,12 +10,8 @@
       <div class="Home__logo">
         <img src="../../assets/images/ft-logo.png" alt="Frozen Throne" />
       </div>
-      <div>
-        <h2 class="Home__title">{{title}}</h2>
-      </div>
-      <div class="Home__subtitle">
-        <p>{{subtitle}}</p>
-      </div>
+      <h2 class="Home__title">{{title}}</h2>
+      <p class="Home__subtitle">{{subtitle}}</p>
       <div class="Home__button">
         <DiscordButton></DiscordButton>
       </div>
@@ -88,7 +84,13 @@ export default {
     bottom: 0;
     right: 0;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    .Home__content {
+      font-size: 0.8rem;
+    }
   }
 
   .Home__logo img {
@@ -97,22 +99,20 @@ export default {
     user-select: none;
   }
 
+  .Home__title, .Home__subtitle {
+    margin: 2rem;
+  }
+
   .Home__title {
-    font-size: 2.1rem;
     letter-spacing: 2px;
     text-shadow: 0 0 26px rgba(0, 0, 0, 1);
   }
   
   .Home__subtitle {
-    margin: 2rem;
     color: var(--bg-secondary);
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-weight: 600;
-  }
-
-  .Home__button {
-    margin: 6rem;
   }
 
   .Home__scroll-icon {

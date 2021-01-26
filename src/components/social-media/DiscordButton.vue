@@ -1,6 +1,6 @@
 <template>
   <PrimaryButton @click="handleClick" style="color: var(--text-primary);">
-    <DiscordIcon width="35" />
+    <DiscordIcon width="28" />
     <span>Join Discord</span>
   </PrimaryButton>
 </template>
