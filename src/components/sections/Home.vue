@@ -63,7 +63,7 @@ export default {
   .Home__bg {
     position: relative;
     top: 0;
-    height: 500px;
+    height: 650px;
   }
 
   .Home__video {
