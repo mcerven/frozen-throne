@@ -76,9 +76,6 @@ export default {
       swipeStop,
       swipeMove,
     }
-  },
-  mounted() {
-    
   }
 }
 </script>
@@ -110,11 +107,11 @@ export default {
   }
 
   .scrollbar-hidden {
-      -ms-overflow-style: none;  /* Internet Explorer 10+ */
-      scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
   }
   .scrollbar-hidden::-webkit-scrollbar { 
-      display: none;  /* Safari and Chrome */
+    display: none;  /* Safari and Chrome */
   }
 
   .swiper-container.active {
@@ -125,6 +122,7 @@ export default {
     display: inline-block;
     height: 300px;
     width: 300px;
+    pointer-events: none;
   }
 
   .timeline-item__top, .timeline-item__bottom {
