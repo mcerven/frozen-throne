@@ -94,6 +94,7 @@ export default {
   .Home__logo img {
     margin-top: 100px;
     max-width: 100%;
+    user-select: none;
   }
 
   .Home__title {

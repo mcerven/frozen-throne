@@ -119,6 +119,7 @@ export default {
     box-shadow: 0 0 32px 0 rgba(0, 0, 0, .8);
     margin-bottom: 1em;
     object-fit: contain;
+    user-select: none;
   }
 
   .fullscreen {

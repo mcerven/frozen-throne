@@ -58,6 +58,7 @@ export default {
     min-width: 100%;
     min-height: 100%;
     object-fit: cover;
+    user-select: none;
   }
 
   .Feature__bg::after {
@@ -96,6 +97,7 @@ export default {
 
   .Feature__icon {
     width: 40px;
+    user-select: none;
   }
 
   .Feature__title, .Feature__description {
@@ -116,11 +118,10 @@ export default {
     bottom: -100%;
     font-size: 1.2rem;
     line-height: 1.35;
-    opacity: 0;
-    transition: opacity var(--transition-duration) var(--transition-function);
+    display: none;
   }
 
   .Feature:hover .Feature__description {
-    opacity: 1;
+    display: initial;
   }
 </style>
