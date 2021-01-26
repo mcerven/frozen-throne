@@ -63,6 +63,7 @@
       class="modal"
       @click="setIsOpen(false)"
       @click.stop="">
+      <button class="modal-close" @click="setIsOpen(false)">&times;</button>
       <div id="modalContent" ref="modalContent"></div>
     </div>
   </section>
@@ -135,6 +136,32 @@ export default {
     justify-content: center;
     align-items: center;
     z-index: 10;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #ccc;
+    font-size: 40px;
+    font-weight: bold;
+    user-select: none;
+    transition: 0.3s;
+    background: transparent;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+  }
+
+  .modal-close:hover,
+  .modal-close:focus {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
   }
 
   #modalContent {
