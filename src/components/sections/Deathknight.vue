@@ -20,7 +20,7 @@
           <figure>
             <img
               class="Deathknight__img"
-              alt="Death knight"
+              alt="Death Knight"
               src="../../assets/images/deathknight/dk.jpg"
               @click="setIsOpen($event, true)" />
           </figure>
@@ -52,7 +52,7 @@
             <img
               class="Deathknight__img"
               src="../../assets/images/deathknight/dk-mount.png"
-              alt="Death knight mount"
+              alt="Death Knight Class Mount"
               @click="setIsOpen($event, true)" />
           </figure>
         </div>
@@ -60,10 +60,10 @@
     </article>
     <div
       v-show="isOpen"
-      class="fullscreen"
+      class="modal"
       @click="setIsOpen(false)"
       @click.stop="">
-      <div id="fullscreenWrapper" ref="fullscreenWrapper"></div>
+      <div id="modalContent" ref="modalContent"></div>
     </div>
   </section>
 </template>
@@ -81,7 +81,7 @@ export default {
     title: String,
   },
   setup() {
-    const fullscreenWrapper = ref(null);
+    const modalContent = ref(null);
     const state = reactive({
       isOpen: false,
     });
@@ -90,22 +90,23 @@ export default {
       state.isOpen = val;
 
       if (state.isOpen) {
-        fullscreenWrapper.value.textContent = '';
+        modalContent.value.textContent = '';
 
         const imageCopy = $event.target.cloneNode(true);
         imageCopy.addEventListener('click', e => {
           e.stopPropagation();
         })
-        fullscreenWrapper.value.append(imageCopy);
+        modalContent.value.append(imageCopy);
+        modalContent.value.append(imageCopy.alt);
       }
     }
 
     onMounted(() => {
-      console.log(fullscreenWrapper.value)
+      console.log(modalContent.value)
     })
     
     return {
-      fullscreenWrapper,
+      modalContent,
       setIsOpen,
       ...toRefs(state),
     }
@@ -117,27 +118,50 @@ export default {
   .Deathknight__img {
     width: 100%;
     box-shadow: 0 0 32px 0 rgba(0, 0, 0, .8);
-    margin-bottom: 1em;
     object-fit: contain;
     user-select: none;
+    cursor: pointer;
+    display: block;
   }
 
-  .fullscreen {
+  .modal {
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    width: 100%;
-    height: 100vh;
     background: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 10;
-    transition: all 300ms ease;
   }
-  .fullscreen .Deathknight__img {
-    max-width: 90vmin;
+
+  #modalContent {
+    font-size: 0.85rem;
+    width: 90%;
+    max-width: var(--page-max-width);
+    height: 90%;
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    animation: appear 400ms ease-out;
+  }
+
+  #modalContent img {
+    cursor: default;
+    max-height: calc(100% - 2rem);
+  }
+
+  @keyframes appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 </style>
