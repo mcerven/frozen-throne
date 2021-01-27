@@ -1,5 +1,9 @@
 export default [
   {
+    label: 'Home',
+    href: '#home',
+  },
+  {
     label: 'Introduction',
     href: '#introduction',
   },
