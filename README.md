@@ -1,4 +1,5 @@
 # Frozen Throne
+Frozen Throne is a project to bring back the original World of Warcraft: Wrath of the Lich King experience. Explore Northrend and face the Lich King once more.
 
 ## Technologies used
 - Vue.js
