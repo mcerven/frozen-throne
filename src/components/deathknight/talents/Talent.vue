@@ -10,6 +10,7 @@
 import { computed } from 'vue';
 
 export default {
+  name: 'Talent',
   props: {
     name: String,
     role: String,

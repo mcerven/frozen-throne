@@ -19,6 +19,7 @@
 import { computed } from 'vue';
 
 export default {
+  name: 'Feature',
   props: {
     title: String,
     description: String,

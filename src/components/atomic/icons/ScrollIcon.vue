@@ -11,6 +11,7 @@
     </g>
   </svg>
 </template>
+
 <style scoped>
   #mouse-wheel {
     animation: moveDown 3s 0s linear infinite;

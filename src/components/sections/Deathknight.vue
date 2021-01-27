@@ -63,7 +63,7 @@
       class="modal"
       @click="setIsOpen(false)"
       @click.stop="">
-      <button class="modal-close" @click="setIsOpen(false)">&times;</button>
+      <button class="modal-close" type="button" @click="setIsOpen(false)">&times;</button>
       <div id="modalContent" ref="modalContent"></div>
     </div>
   </section>
@@ -74,6 +74,7 @@ import { ref, reactive, toRefs, onMounted } from 'vue';
 import Talents from '../deathknight/talents';
 
 export default {
+  name: 'Deathknight',
   components: {
     Talents,
   },

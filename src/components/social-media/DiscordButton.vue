@@ -1,5 +1,5 @@
 <template>
-  <PrimaryButton @click="handleClick" style="color: var(--text-primary);">
+  <PrimaryButton @click="handleClick" style="color: var(--text-primary);" role="link">
     <DiscordIcon width="28" />
     <span>Join Discord</span>
   </PrimaryButton>
@@ -10,11 +10,11 @@ import PrimaryButton from '../atomic/buttons/PrimaryButton.vue';
 import DiscordIcon from '../atomic/icons/DiscordIcon.vue';
 
 export default {
+  name: 'DiscordButton',
   components: { 
     PrimaryButton,
     DiscordIcon,
   },
-  name: 'DiscordButton',
   methods: {
     handleClick() {
       window.open('https://discord.com/invite/wotlk', '_blank');

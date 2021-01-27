@@ -13,6 +13,7 @@
 import Talent from './Talent';
 
 export default {
+  name: 'Talents',
   components: {
     Talent,
   },

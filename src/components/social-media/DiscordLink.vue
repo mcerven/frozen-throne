@@ -9,7 +9,8 @@ import DiscordIcon from '../atomic/icons/DiscordIcon.vue';
 import ExternalLink from '../atomic/links/ExternalLink.vue';
 
 export default {
-  components: { 
+  name: 'DiscordLink',
+  components: {
     DiscordIcon,
     ExternalLink,
   },

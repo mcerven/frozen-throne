@@ -16,6 +16,7 @@
 import Feature from '../feature';
 
 export default {
+  name: 'Features',
   components: {
     Feature,
   },

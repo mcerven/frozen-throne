@@ -25,6 +25,7 @@ import SectionLinks from '../section-links';
 import LinkData from '../../data/link-data';
 
 export default {
+  name: 'Footer',
   components: {
     DiscordLink,
     GithubLink,

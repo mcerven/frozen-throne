@@ -9,6 +9,7 @@ import GithubIcon from '../atomic/icons/GithubIcon.vue';
 import ExternalLink from '../atomic/links/ExternalLink.vue';
 
 export default {
+  name: 'GithubLink',
   components: { 
     GithubIcon,
     ExternalLink,

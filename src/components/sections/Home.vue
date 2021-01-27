@@ -28,6 +28,7 @@ import DiscordButton from '../social-media/DiscordButton.vue';
 import ScrollIcon from '../atomic/icons/ScrollIcon.vue';
 
 export default {
+  name: 'Home',
   components: {
     DiscordButton,
     ScrollIcon,

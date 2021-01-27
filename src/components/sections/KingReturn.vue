@@ -21,6 +21,7 @@
 import Footer from '../footer';
 
 export default {
+  name: 'KingReturn',
   components: {
     Footer,
   },

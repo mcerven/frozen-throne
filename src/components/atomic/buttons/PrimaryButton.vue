@@ -1,5 +1,5 @@
 <template>
-  <button v-bind="props" class="Button">
+  <button v-bind="props" type="button" class="Button">
     <div class="Button__content">
       <slot></slot>
     </div>
@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'Button',
+  name: 'PrimaryButton',
   props: {
   },
 }

@@ -10,6 +10,7 @@
 import InternalLink from '../atomic/links/InternalLink.vue';
 
 export default {
+  name: 'SectionLinks',
   components: {
     InternalLink,
   },
