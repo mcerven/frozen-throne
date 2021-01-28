@@ -57,7 +57,7 @@ export default {
       },
       {
         title: 'Northrend',
-        description: 'Step into Northrend and face new enemies. Earn your trust within Kirin Tor, Argent Crusade and more enemies of the Scourge. Geaur up to raid the domains of the ancient foes, fight in the Argent Tournament and prepare to face the Lich King.',
+        description: 'Step into Northrend and face new enemies. Earn your trust within Kirin Tor, Argent Crusade and more enemies of the Scourge. Gear up to raid the domains of the ancient foes, fight in the Argent Tournament and prepare to face the Lich King.',
         icon: 'icon_northrend.svg',
         image: 'bg_northrend.png',
       },
