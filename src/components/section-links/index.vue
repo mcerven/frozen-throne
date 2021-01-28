@@ -24,6 +24,13 @@ export default {
   .SectionLinks {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 1.2em;
+    font-size: 0.8rem;
+  }
+
+  @media screen and (max-width: 850px) {
+    .SectionLinks {
+      flex-direction: column;
+    }
   }
 </style>

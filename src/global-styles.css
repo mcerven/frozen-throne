@@ -51,6 +51,7 @@ section > header .section-name {
   color: var(--text-secondary);
   font-size: 1.2rem;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .scroll-container {
@@ -71,7 +72,7 @@ section > header .section-name {
 .scroll-container > section {
   position: relative;
   min-height: max(100vh, 700px);
-  min-width: 300px;
+  min-width: 250px;
   padding-bottom: 7em;
   scroll-snap-align: start;
 }
@@ -83,7 +84,7 @@ section > header .section-name {
   max-width: var(--page-max-width);
   gap: 3rem;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 0 auto 3rem auto;
   font-size: 1.1rem;
   text-align: justify;
   padding: 0 10px;
@@ -91,7 +92,6 @@ section > header .section-name {
 
 .column {
   line-height: 1.5;
-  margin-bottom: 3em;
   flex: 1 1 400px;
 }
 

@@ -46,6 +46,6 @@ export default {
   .Talents {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.4em;
   }
 </style>

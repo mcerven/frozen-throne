@@ -26,7 +26,7 @@
           </figure>
         </div>
       </div>
-      <div class="row">
+      <div class="row Deathknight__talents-column">
         <div class="column">
           <Talents />
         </div>
@@ -117,6 +117,10 @@ export default {
 </script>
 
 <style>
+  .Deathknight__talents-column {
+    flex-wrap: wrap-reverse;
+  }
+
   .Deathknight__img {
     width: 100%;
     box-shadow: 0 0 32px 0 rgba(0, 0, 0, .8);

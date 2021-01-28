@@ -51,7 +51,7 @@ export default {
     width: 100%;
     min-height: 200px;
     background: black;
-    padding: 0 10px;
+    padding: 0 15px;
   }
 
   .Footer__content {
@@ -80,5 +80,6 @@ export default {
 
   .Footer__copyright {
     opacity: 0.8;
+    font-size: 0.9rem;
   }
 </style>

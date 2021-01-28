@@ -54,8 +54,8 @@ export default {
     screen and (max-width: 850px),
     screen and (max-height: 800px) {
     .KingReturn__cinematic iframe {
-      width: 600px;
-      height: 340px;
+      width: 500px;
+      height: 283px;
     }
   }
 
