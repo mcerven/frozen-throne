@@ -4,6 +4,9 @@ Frozen Throne is an upcoming World of Warcraft game project with the aim to brin
 ## Technologies used
 - Vue.js
 
+## Methodologies used
+- BEM metodology for naming CSS classes
+
 ## Demo
 https://frozen-throne.netlify.app
 
